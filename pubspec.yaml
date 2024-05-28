@@ -1,0 +1,32 @@
+name: android_health
+description: A plugin to access health data on Android devices.
+
+version: 1.0.1
+
+repository: https://github.com/Schamppu/android_health
+issue_tracker: https://github.com/Schamppu/android_health/issues
+topics:
+  - pedometer
+  - health
+  - android
+  - recording api
+  - fitness
+
+environment:
+  sdk: '>=3.0.1 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.notacult.android_health
+        pluginClass: AndroidHealthPlugin
